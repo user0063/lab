@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-<body><h1>1. </h1><p>
+<body><h1>1. </h1><code>
   import tensorflow as tf
 # creating two tensors
 matrix = tf.constant([[1, 2], [3, 4]])
@@ -42,9 +42,9 @@ tf.add(x, y).shape.as_list()
 
 x = np.ones([1, 2, 1, 4])
 y = np.ones([3, 4])
-tf.add(x, y).shape.as_list()</p>
+tf.add(x, y).shape.as_list()</code>
 
-  <h1>2. </h1><p>import numpy as np
+  <h1>2. </h1><code>import numpy as np
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 
@@ -79,8 +79,8 @@ model.fit(X_train, y_train, epochs=100, batch_size=32, validation_split=0.2)
 # Evaluate the model
 mse = model.evaluate(X_train, y_train)
 print('MSE: %.2f' % mse)
-</p>
-<h1>3a</h1><p>import tensorflow as tf
+</code>
+<h1>3a</h1><code>import tensorflow as tf
 
 # Define the perceptron function
 def perceptron(X, weights, bias):
@@ -113,8 +113,8 @@ X_test = tf.constant([[0, 0], [0, 1], [1, 0], [1, 1]], dtype=tf.float32)
 y_test = tf.constant([[-1], [-1], [-1], [1]], dtype=tf.float32)
 y_pred = perceptron(X_test, weights, bias)
 print('Predictions:', y_pred.numpy())
-</p>
-  <h1>3b</h1><p>import numpy as np
+</code>
+  <h1>3b</h1><code>import numpy as np
 import keras
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Activation
@@ -138,8 +138,8 @@ model.fit(X, Y, epochs=1000, batch_size=4, verbose=0)
 loss, accuracy = model.evaluate(X, Y, verbose=0)
 print("Accuracy:", accuracy)
 
-</p>
-  <h1>4a</h1><p>import tensorflow as tf
+</code>
+  <h1>4a</h1><code>import tensorflow as tf
 
 # Load dataset
 mnist = tf.keras.datasets.mnist
@@ -168,8 +168,8 @@ model.fit(x_train, y_train, epochs=5)
 
 # Evaluate the model
 model.evaluate(x_test, y_test, verbose=2)
-</p>
-  <h1>4b</h1><p>import numpy as np
+</code>
+  <h1>4b</h1><code>import numpy as np
 from keras.models import Sequential
 from keras.layers import Dense
 
@@ -195,8 +195,8 @@ model.fit(X, y, epochs=10, batch_size=32)
 sample_input = np.random.rand(1, 10)  # Input for a single sample
 prediction = model.predict(sample_input)
 print("Prediction:", prediction)
-</p>
-  <h1>5a</h1><p>import tensorflow as tf
+</code>
+  <h1>5a</h1><code>import tensorflow as tf
 from tensorflow.keras import datasets, layers, models
 import matplotlib.pyplot as plt
 
@@ -234,8 +234,8 @@ plt.xlabel('Epoch')
 plt.ylabel('Accuracy')
 plt.legend()
 plt.show()
-</p>
-  <h1>5b</h1><p>import tensorflow as tf
+</code>
+  <h1>5b</h1><code>import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 
@@ -269,6 +269,6 @@ history = model.fit(train_images, train_labels, epochs=10, validation_data=(test
 # Evaluate the model on the test set
 test_loss, test_acc = model.evaluate(test_images, test_labels, verbose=2)
 print(test_acc)
-</p>
+</code>
 </body>
 </html>
